@@ -1,19 +1,21 @@
 .hero {
     background-color: #757575;
-    background: linear-gradient(to bottom right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroimg.jpg);
+    background: linear-gradient(to bottom right, 
+    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/heroimg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media screen and (min-width:480px) {
-            width: 480px;
+    @media screen and (max-width:767px) {
+            max-width: 480px;
         }
     
         @media screen and (min-width: 768px) {
-            width: 768px;
+            max-width: 768px;
         }
     
         @media screen and (min-width: 1200px) {
-            width: 1200px;
+            max-width: 1200px;
         }
 }
 

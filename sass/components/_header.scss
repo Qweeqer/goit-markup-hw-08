@@ -9,17 +9,36 @@
 }
 .header__container {
     display: flex;
+       
 }
 /* Header navigation */
 .header__nav {
+    @media screen and (max-width:767px){
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 23px;
+@include align(flex, center, space-between);
+
+}
+    @media screen and (min-width: 768px){
     @include align(flex, center, flex-start);
+    }
 }
 
 /* Main menu nav */
 .menu {
     @include font (500, 14px, 1.14, 0.02em);
-    display: flex;
-    margin-left: 93px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 88px;
+         }
+    @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
 }
 .menu__item {
     position: relative;
@@ -61,8 +80,18 @@
 }
 /* contacts */
 .header__contacts {
-    display: flex;
-    margin-left: 331px;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }    
+        @media screen and (min-width: 768px) {
+                
+            margin-left: 84px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-left: 331px;
+        }
 }
 .contacts>.contacts__item:not(:last-child) {
     margin-right: 50px;
