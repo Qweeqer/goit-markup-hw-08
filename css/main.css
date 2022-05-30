@@ -387,6 +387,66 @@ li {
 .menu-mobile.is-open {
   display: block;
   margin-left: -15px;
+  z-index: 1;
+}
+
+.menu-mobile__list {
+  margin-bottom: 302px;
+}
+
+.menu-mobile__link {
+  margin-bottom: 32px;
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.menu-mobile__link.current {
+  color: #2196F3;
+}
+
+.menu-mobile__contacts {
+  margin-bottom: 64px;
+}
+
+.menu-mobile__contacts-tel {
+  display: block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu-mobile__contacts-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-mobile__social-list {
+  margin-left: -10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-mobile__social-link {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
