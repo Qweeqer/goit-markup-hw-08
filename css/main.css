@@ -1304,10 +1304,26 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 .filter {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  max-width: 611px;
+  flex-wrap: wrap;
+  margin-top: -34px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 611px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-item {
+    padding-left: 8px;
+    padding-bottom: 15px;
+  }
 }
 
 /* .filter>.filter-item:not(:last-child) 
@@ -1348,8 +1364,23 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 .portfolio-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: -64px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-left: -30px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
 }
 
 .portfolio-top-wrap {
@@ -1386,6 +1417,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .portfolio-item {
+  margin-bottom: 30px;
   display: inline-block;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
@@ -1398,12 +1430,20 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list > .portfolio-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
-.portfolio-list > .portfolio-item:nth-child(n+7) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .portfolio-list > .portfolio-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio-list > .portfolio-item:nth-child(n+7) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio-title {
