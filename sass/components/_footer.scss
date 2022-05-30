@@ -1,23 +1,45 @@
 .footer {
-    background-color: var(--hero-footer-bg);
+background-color: var(--hero-footer-bg);
+}
+.footer__tablet-wrap{
+@media screen and (min-width:768px){
+@include align(flex, baseline, space-between);
 }
 
+}
 
 .footer__container {
-    @include align(flex, baseline, space-between);
+text-align: center;
+@media screen and (min-width:768px){
+display: flex;
+flex-wrap: wrap;
 }
+    @media screen and (min-width:1200px){
+text-align: left;
+flex-wrap: nowrap;
+@include align(flex, baseline, space-between);
 
+}
+}
+.footer__address{
+@media screen and (min-width:768px) {
+margin-left: 61px;
+}
+@media screen and (min-width:768px) {
+margin-left: 0px;
+}
+}
 /* address */
 .address {
-    @include font (null, 14px, 1.71, 0.03em);
+@include font (null, 14px, 1.71, 0.03em);
 }
 
 .address__list {
-    padding-bottom: 60px;
+padding-bottom: 60px;
 }
 
 .address__list>.address__item:not(:last-child) {
-    margin-bottom: 9px;
+margin-bottom: 9px;
 }
 
 
@@ -25,70 +47,112 @@
 .address__link-map,
 .address__link-mail,
 .address__link-tel {
-    color: var(--hero-text);
-    text-decoration: none;
-    font-style: normal;
+color: var(--hero-text);
+text-decoration: none;
+font-style: normal;
 }
 
 .address__link-mail,
 .address__link-tel {
-    color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
-            color: var(--brand-color);
-        }
+color: rgba(255, 255, 255, 0.6);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover, &:focus {
+        color: var(--brand-color);
+    }
 }
 
 /* <--Social join list---------> */
 .footer__social {
-    margin-left: 70px;
-    padding-top: 75px;
-    /* width: 206px;
-height: 80px; */
+padding-top: 0px;
+margin-bottom: 60px;
+@media screen and (min-width:768px) {
+margin-left: 165px;
+margin-right: 74px;
+}
+@media screen and (min-width:1200px) {
+margin-right: 0px;
+margin-left: 70px;
+padding-top: 75px;
+}
+
+}
+.footer__social .social__list{
+justify-content: center;
 }
 
 .footer__title {
-    @include font (700, 14px, 1.14, 0.03em);
-    @include align(flex, flex-start, null);
-    margin-bottom: 20px;
+margin-bottom: 20px;
     text-transform: uppercase;
     color: var(--background-color);
+    @include font (700, 14px, 1.14, 0.03em);
+@media screen and (min-width:1200px) {
+@include align(flex, flex-start, null);
+}
 }
 
 
 .footer__subscription {
-    margin-left: 93px;
+@media screen and (min-width:768px) {
+    margin: 0 auto;
+}
+@media screen and (min-width:1200px) {
+margin-left: 93px;
+margin-right: 0px;
+}
 }
 .subscription__field-wrap {
-    display: flex;
+
+@media screen and (min-width:1200px) {
+display: flex;
+}
 }
 .subscription__input {
-    padding-left: 18px;
-    width: 358px;
-    height: 50px;
-    align-items: center;
-    background: var(--hero-footer-bg);
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: none;
-    &:focus {
-            border: 1px solid var(--brand-color);
-        }
+padding-left: 16px;
+margin-left: -1px;
+margin-right: -1px;
+margin-bottom: 20px;
+width: 100%;
+height: 50px;
+align-items: center;
+background: var(--hero-footer-bg);
+color: #ffffff;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+outline: none;
+@media screen and (min-width:768px){
+width: 450px;
+}
+@media screen and (min-width:1200px) {
+width: 358px;
+margin-bottom: 0px;
+}
+&:focus {
+        border: 1px solid var(--brand-color);
+    }
 }
 .subscription__submit {
-    position: relative;
-    margin-left: 12px;
+position: relative;
+margin: 0 auto;
+padding-bottom: 60px;
+max-width: 200px;
+@media screen and (min-width:1200px){
+margin-left: 12px;
+}
 
 }
 .subscription__submit-btn {
-    @include align(flex, center, null);
-    padding-left: 29px;
+
+@media screen and (min-width:1200px){
+@include align(flex, center, null);
+padding-left: 29px;
+}
 }
 .subscription__icon-send {
-    position: absolute;
-    top: 13px;
-    right: 28px;
-    margin-left: 10px;
+position: absolute;
+top: 13px;
+margin-left: 10px;
+@media screen and (min-width:1200px) {
+right: 28px;
+}
 }

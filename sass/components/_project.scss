@@ -4,12 +4,8 @@
         display: none;
     }
 }
-
-.project__title,
-.team__title {
-    @include font (700, 36px, 1.16, 0.03em);
+.project__title{
     text-align: center;
-    color: var(--title);
 }
 
 /* /-----------project list/-------- */
