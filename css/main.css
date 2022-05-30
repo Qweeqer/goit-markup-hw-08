@@ -399,6 +399,15 @@ li {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .hero__text {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+  }
+}
+
 /* button order*/
 .hero__button {
   /* padding: 10px 32px; */
