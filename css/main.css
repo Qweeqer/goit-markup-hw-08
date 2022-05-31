@@ -1192,7 +1192,6 @@ li {
   padding: 40px;
   top: 50%;
   left: 50%;
-  width: 100vw;
   background-color: var(--background-color);
   border-radius: 5px;
   transform: translate(-50%, -50%) scale(1);
@@ -1202,9 +1201,15 @@ li {
   overflow-y: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
-    height: 581px;
+    width: 528px;
   }
 }
 
