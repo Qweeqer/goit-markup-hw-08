@@ -89,8 +89,9 @@
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__link" href="#">Контакты</a>
                 </li>
-                </div>
             </ul>
+                </div>
+            
             <div class="mob-menu-bottom">
             <ul class="menu-mobile__contacts">
                 <li class="menu-mobile__contacts-item">
@@ -261,19 +262,41 @@
                 <ul class="project__list">
                     <li class="project__item">
                         <div class="project__top-wrap">
-                            <img src="./images/whatwedo1.jpg" alt="Десктопные приложения" width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                                ./images/whatwedo1.jpg    1x,
+                                                ./images/wedo-1-desktop-2x-min.jpg 2x
+                                              " media="(min-width: 1200px)" />
+                            
+                                <img src="./images/whatwedo1.jpg" alt="Десктопные приложения" width="370" height="294">
+                            </picture>                            
                             <p class="project__top-text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="project__item">
                         <div class="project__top-wrap">
-                            <img src="./images/whatwedo2.jpg" alt="Мобильные приложения" width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                                ./images/whatwedo2.jpg    1x,
+                                                ./images/wedo-2-desktop-2x-min.jpg 2x
+                                                " media="(min-width: 1200px)" />
+                            
+                                <img src="./images/whatwedo2.jpg" alt="Мобильные приложения" width="370" height="294">
+                            </picture>                            
                             <p class="project__top-text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="project__item">
                         <div class="project__top-wrap">
+                            <picture>
+                            <source srcset="
+                                            ./images/whatwedo3.jpg    1x,
+                                            ./images/wedo-3-desktop-2x-min.jpg 2x
+                                            " media="(min-width: 1200px)" />
+                            
                             <img src="./images/whatwedo3.jpg" alt="Дизайнерские решения" width="370" height="294">
+                            </picture>
+                            
                             <p class="project__top-text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -286,8 +309,23 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="members__list members">
                     <li class="members__card">
-                        <img class="members__photo" src="./images/ihordemyanenko.jpg"
-                            alt="первый член команды Игорь Демьяненко" width="270">
+                        <picture>
+                            <source srcset="
+                                            ./images/ihordemyanenko.jpg    1x,
+                                            ./images/team-1-desktop-2x-min.jpg 2x
+                                          " media="(min-width: 1200px)" />
+                            <source srcset="
+                                            ./images/team-1-tab-1x-min.jpg    1x,
+                                            ./images/team-1-tab-2x-min.jpg 2x
+                                          " media="(min-width: 768px)" />
+                            <source srcset="
+                                            ./images/team-1-mob-1x-min.jpg    1x,
+                                            ./images/team-1-mob-2x-min.jpg 2x
+                                            " media="(min-width: 480px)" />
+                        
+                            <img class="members__photo" src="./images/team-1-mob-1x-min.jpg" alt="первый член команды Игорь Демьяненко">
+                        </picture>
+                        
                         <h3 class="members__name">Игорь Демьяненко</h3>
                         <p class="members__position">Product Designer</p>
                         <div class="team__social social">
@@ -325,8 +363,22 @@
                         </div>
                     </li>
                     <li class="members__card">
-                        <img class="members__photo" src="./images/olharepina.jpg"
-                            alt="второй член команды Ольга Репина" width="270">
+                        <picture>
+                        <source srcset="
+                                        ./images/olharepina.jpg    1x,
+                                        ./images/team-2-desktop-2x-min.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                                        ./images/team-2-tab-1x-min.jpg    1x,
+                                        ./images/team-2-tab-2x-min.jpg 2x
+                                        " media="(min-width: 768px)" />
+                        <source srcset="
+                                        ./images/team-2-mob-1x-min.jpg    1x,
+                                        ./images/team-2-mob-2x-min.jpg 2x
+                                        " media="(min-width: 480px)" />
+                        
+                            <img class="members__photo" src="./images/team-2-mob-1x-min.jpg" alt="второй член команды Ольга Репина">
+                        </picture>
                         <h3 class="members__name">Ольга Репина</h3>
                         <p class="members__position">Product Designer</p>
                         <div class="team__social social">
@@ -364,8 +416,22 @@
                         </div>
                     </li>
                     <li class="members__card">
-                        <img class="members__photo" src="./images/mykolatarasov.jpg"
-                            alt="третий член команды Николай Тарасов" width="270">
+                        <picture>
+                            <source srcset="
+                                                                ./images/mykolatarasov.jpg   1x,
+                                                                ./images/team-3-desktop-2x-min.jpg 2x
+                                                                " media="(min-width: 1200px)" />
+                            <source srcset="
+                                                                ./images/team-3-tab-1x-min.jpg    1x,
+                                                                ./images/team-3-tab-2x-min.jpg 2x
+                                                                " media="(min-width: 768px)" />
+                            <source srcset="
+                                                                ./images/team-3-mob-1x-min.jpg    1x,
+                                                                ./images/team-3-mob-2x-min.jpg 2x
+                                                                " media="(min-width: 480px)" />
+                        
+                            <img class="members__photo" src="./images/team-3-mob-1x-min.jpg" alt="третий член команды Николай Тарасов">
+                        </picture>
                         <h3 class="members__name">Николай Тарасов</h3>
                         <p class="members__position">Marketing</p>
                         <div class="team__social social">
@@ -403,8 +469,22 @@
                         </div>
                     </li>
                     <li class="members__card">
-                        <img class="members__photo" src="./images/mihayloermakov.jpg"
-                            alt="четвертый член команды Михаил Ермаков" width="270">
+                        <picture>
+                            <source srcset="
+                                            ./images/mihayloermakov.jpg   1x,
+                                            ./images/team-4-desktop-2x-min.jpg 2x
+                                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                                            ./images/team-4-tab-1x-min.jpg    1x,
+                                            ./images/team-4-tab-2x-min.jpg 2x
+                                            " media="(min-width: 768px)" />
+                            <source srcset="
+                                            ./images/team-4-mob-1x-min.jpg    1x,
+                                            ./images/team-4-mob-2x-min.jpg 2x
+                                            " media="(min-width: 480px)" />
+                        
+                            <img class="members__photo" src="./images/team-4-mob-1x-min.jpg" alt="четвертый член команды Михаил Ермаков">
+                        </picture>
                         <h3 class="members__name">Михаил Ермаков</h3>
                         <p class="members__position">UI Designer</p>
                         <div class="team__social social">
