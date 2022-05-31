@@ -4,7 +4,8 @@
     // padding-right: 23px;
     border: none;
     background-color: transparent;
-    &:hover{
+    &:hover,
+    &:focus{
         fill:#2196F3;
     }
 @media screen and (min-width:768px) {
@@ -20,7 +21,8 @@ display: none;
     background-color: transparent;
     border: none;
     margin-bottom: 30px;
-    &:hover {
+    &:hover,
+    &:focus {
             fill: #2196F3;
         }
 }
