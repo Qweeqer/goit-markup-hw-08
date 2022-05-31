@@ -513,6 +513,13 @@ li {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1200px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/heroimg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/header-desktop-2x-min.jpg);
   }
 }
 
@@ -1455,7 +1462,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   position: absolute;
   width: 100%;
   top: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   color: var(--hero-text);
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
