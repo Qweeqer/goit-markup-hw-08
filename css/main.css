@@ -407,7 +407,6 @@ li {
 }
 
 .menu-mobile .container {
-  padding-left: 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -463,6 +462,7 @@ li {
   margin-left: -10px;
   display: flex;
   justify-content: flex-start;
+  padding-right: 83px;
 }
 
 .menu-mobile__social-link {
