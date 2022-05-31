@@ -18,11 +18,12 @@
     position: relative;
     width: 100%;
     @include align(flex, center, space-between);
-
 }
-    @media screen and (min-width: 768px){
-        
+    @media screen and (min-width: 768px){      
     @include align(flex, center, flex-start);
+    }
+    @media screen and (min-width:1200px){
+            margin-bottom: -10px;
     }
 }
 
