@@ -364,6 +364,7 @@ li {
   margin: 0;
   border: none;
   background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-open-btn:hover, .menu-open-btn:focus {
@@ -386,6 +387,7 @@ li {
   background-color: transparent;
   border: none;
   margin-bottom: 30px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close-btn:hover, .menu-close-btn:focus {
@@ -404,12 +406,21 @@ li {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
   padding-top: 21px;
   padding-bottom: 48px;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, 0%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), left 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mobile.is-hidden {
+  opacity: 0.1;
+  transform: translate(50%, 0%) scale(1.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-mobile .container {
