@@ -1192,11 +1192,11 @@ li {
 .modal {
   position: absolute;
   padding: 40px;
-  top: 50%;
+  top: 10px;
   left: 50%;
   background-color: var(--background-color);
   border-radius: 5px;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%) scale(0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
   position: fixed;
@@ -1212,6 +1212,8 @@ li {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 
@@ -1226,11 +1228,11 @@ li {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 50%;
-  resize: none;
+  /* border: 1px solid rgba(0,0,0,0.1); */
   cursor: pointer;
   /* transform: scale(1);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
@@ -1240,6 +1242,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   position: absolute;
   top: 0px;
   right: 0px;
+  resize: none;
   background: var(--background-color);
   fill: var(--text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
