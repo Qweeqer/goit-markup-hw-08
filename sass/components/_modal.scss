@@ -169,7 +169,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 .field__check-icon {
     fill: transparent;
     .field__check:checked+.field__check-text & {
-            fill: #ffffff;
+            fill: $hero-text;
         }
 }
 .field__agreement {
